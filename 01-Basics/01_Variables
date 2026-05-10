@@ -1,0 +1,11 @@
+const accountID = 23
+let accountEmail = "hehe@gmail.com"
+var accountPassword = "2343232"
+accountCity = "Bengaluru"
+let whatsUp;
+
+console.table([accountID,accountEmail,accountPassword,accountCity,whatsUp])
+
+/* PLease Don't use var as the keyword for words, ok?? Because it allows to declare the same name and it can leak from the block and create problems.
+   And We cannot change the variavbles that are declared const. Const keyword is used to not change the variable 
+*/
