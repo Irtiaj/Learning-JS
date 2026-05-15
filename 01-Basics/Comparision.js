@@ -26,3 +26,15 @@ const myFunction = function(){
 }
 
 myFunction(); //It's called function object
+//Stack(Primitive) & Heap(Non-primitive)
+let ytchannel = "PrimeNewtons" 
+// Incase of heap you take the reference which actually kind of taking the value itself.
+//But, in stack you just take a single copy of the thing, that's the difference.
+let objOne = {
+    email: "hehegmail.com",
+    age: 21
+}
+
+let objTwo = objOne;
+objTwo.age = 22;
+console.log(objOne);
