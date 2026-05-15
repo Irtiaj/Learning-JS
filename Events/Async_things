@@ -1,0 +1,10 @@
+Javascript is Basically a
+-> Synchronous
+-> Single Threaded 
+Execution Context 
+-> it executes one line at a time
+if there are two calls or two things to be done, then there will be one by one execution 
+
+Blocking & Blocking Code
+-> Block the flow and read the file Sync 
+# Do not block the execution just Read the File Async
