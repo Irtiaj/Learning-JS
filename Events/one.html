@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: gray;">
+    <h2>Amazing image</h2>
+<div>
+    <ul id="images">
+        <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/1974508/pexels-photo-1974508.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="photoshop"></li>
+        <li><img width="200px" id="japan" src="https://images.pexels.com/photos/1440476/pexels-photo-1440476.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="japan"></li>
+        <li><img width="200px" id="river" src="https://images.pexels.com/photos/3223424/pexels-photo-3223424.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="river"></li>
+        <li><img width="200px" id="owl" src="https://images.pexels.com/photos/1661535/pexels-photo-1661535.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="owl" ></li>
+        <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2822182/pexels-photo-2822182.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="prayer"></li>
+        <li><a href="https://google.com" id="google">Google</a></li>
+    </ul>
+</div>
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('Panda')
+    // }
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked The Image");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("Clicked the owl");
+    //     e.stopPropagation()
+    // },true)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("Google clicked")
+    //     e.preventDefault()
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        if (e.target.tagName === 'IMG') {
+        let removing = e.target.parentNode
+        removing.remove()
+        }
+    },false)
+
+</script>
+</html>
