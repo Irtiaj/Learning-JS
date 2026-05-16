@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Irtiaj Vibes</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    const randomColor = function () {
+        const hex = "012345678910ABCDE"
+        let color = '#'
+        for(let i=0;i<6;i++){
+            color += hex[Math.floor(Math.random()*16)]
+        }
+
+        return color;
+    }
+    console.log();
+    
+    let heheCatcher;
+    const startChangingColor = function(){
+        function hehe() {document.body.style.backgroundColor = randomColor()}
+        if(!heheCatcher){
+            heheCatcher = setInterval(hehe,1000)
+        }
+    };
+
+    const stopChangingColor = function() {
+        clearInterval(heheCatcher)
+        heheCatcher = null
+    };
+
+    document.querySelector('#start').addEventListener('click',startChangingColor)
+    document.querySelector('#stop').addEventListener('click',stopChangingColor)
+</script>
+</html>
