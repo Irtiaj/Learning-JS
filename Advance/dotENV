@@ -1,0 +1,6 @@
+Here from the terminal what it do is 
+// npm install dotenv
+this adds the env file in the package.json file of the project, then it allows us to use  the code 
+// require('dotenv').config
+thus it allows me to use the env thing. just declare a .env file in the file folder then, i just write the secured thing there
+which can be the API_KEY then in the code i just assign it like : process.env.API_KEY
